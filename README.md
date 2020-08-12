@@ -7,4 +7,5 @@ Using python, a high-tech programming language, allowing users to programme on b
 __Required programs__
 
 •	Latest version of python / https://www.python.org/downloads/
+
 •	PyCharm Community IDE-https://www.jetbrains.com/pycharm/download/#section=windows
