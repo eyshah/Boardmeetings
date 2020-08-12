@@ -27,3 +27,17 @@ with open("File location / File name", "r") as "create a file name"
     for line in create a file name"
         print(line)
 
+
+    In practice 
+
+import csv
+
+with open("C:/Users/Ayesha's laptop/Documents/Boardmeeting2.csv", "r") as csv_rfile:
+    csv_reader = csv.reader(csv_rfile)
+
+    for line in csv_rfile:
+        print(line)
+        
+By putting this code into python allows you to read a csv file.
+
+
