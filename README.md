@@ -1,4 +1,4 @@
-# Boardmeetings - CSV FILE
+# Boardmeetings - CSV FILE Task 4
 
   __PARSE / VISUALIZE IN PYTHON A CSV FILE__
 
@@ -40,3 +40,4 @@ with open("C:/Users/Ayesha's laptop/PycharmProjects/try-22/boardmeetingnew.csv",
         
 By applying this code within python allowed it to open and read your csv file.
 
+  __CODE 2 Write the same CVS file changing the delimiter__
