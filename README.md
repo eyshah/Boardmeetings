@@ -17,7 +17,7 @@ An csv text file stands for Comma separated value where each line in the file co
 
 __Code 1 = How to open / read a CSV File__
 
-    Code sturcture
+ __Code sturcture__
 
 import csv "installs the csv function"
 
@@ -25,10 +25,10 @@ with open("File location / File name", "r") as "create a file name"
     csv_reader = csv.reader(create a file name")
 
     for line in create a file name"
-        print(line)
+       print(line)
 
 
-    In practice 
+  __In practice__ 
 
 import csv
 
@@ -38,6 +38,5 @@ with open("C:/Users/Ayesha's laptop/Documents/Boardmeeting2.csv", "r") as csv_rf
     for line in csv_rfile:
         print(line)
         
-By putting this code into python allows you to read a csv file.
-
+By applying this code within python allowed it to open and read your csv file.
 
