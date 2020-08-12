@@ -17,7 +17,7 @@ An csv text file stands for Comma separated value where each line in the file co
 
    __Code 1 - How to open / read a CSV File.__
  
-Code sturcture
+   **Code sturcture**
 
 import csv "installs the csv function"
 
@@ -26,5 +26,6 @@ with open("File location / File name", "r") as "create a file name"
 
     for line in create a file name"
         print(line)
-
+        
+ 
 
