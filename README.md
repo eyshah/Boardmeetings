@@ -37,7 +37,9 @@ with open("C:/Users/Ayesha's laptop/PycharmProjects/try-22/boardmeetingnew.csv",
 
     for line in csv_rfile:
         print(line)
-        
+ 
+"Run- Excecute selction in python console"
+
 By applying this code within python allowed it to open and read your csv file.
 
   __CODE 2 Write the same CVS file changing the delimiter__
