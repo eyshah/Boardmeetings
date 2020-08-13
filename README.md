@@ -15,6 +15,7 @@ An csv text file stands for Comma separated value where each line in the file co
 
 * Pycharm IDE / https://www.jetbrains.com/pycharm/download/#section=windows
 
+
 __Code 1 = How to open / read a CSV File__
 
  __Code sturcture__
@@ -43,7 +44,8 @@ with open("C:/Users/Ayesha's laptop/PycharmProjects/try-22/boardmeetingnew.csv",
 By applying this code within python allowed it to open and read your csv file.
 
  
- __CODE 2 Write the same CVS file changing the delimiter__
+
+__CODE 2 Write the same CVS file changing the delimiter__
  
  __Code structure__
  *Code 1 minus line 4-5. Following on with code 2*
