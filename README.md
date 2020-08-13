@@ -76,3 +76,5 @@ with open("new_meetingme_csv", "w") as new_nfile:
         csv_writer.writerow(line)
  
  "Run - excecute selction in python console"
+ 
+ This code 2 I have written in python allows to separate the data within the csv file by a different delimiter.
