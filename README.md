@@ -42,4 +42,35 @@ with open("C:/Users/Ayesha's laptop/PycharmProjects/try-22/boardmeetingnew.csv",
 
 By applying this code within python allowed it to open and read your csv file.
 
-  __CODE 2 Write the same CVS file changing the delimiter__
+ 
+ __CODE 2 Write the same CVS file changing the delimiter__
+ 
+ __Code structure__
+ *Code 1 minus line 4-5. Following on with code 2*
+
+Import csv
+
+with open("File location / File name", "r") as “Create a file name”:
+    csv_reader = csv.reader(file name)
+	       for line in csv_reader
+
+with open(“enter new files name”, “w”) create new files variable name:
+      csv_writer = csv.writerow(enter variable, delimiter=“chose new delimiter”) 
+      
+      for line in (csv_reader)
+      csv_writer.writerow(line)
+
+
+__In practice__
+
+import csv
+
+csv_reader= csv.reader(open("boardmeetingnew.csv","r"), delimiter=",")
+
+with open("new_meetingme_csv", "w") as new_nfile:
+     csv_writer = csv.writer(new_nfile, delimiter="/")
+
+     for line in csv_reader:
+        csv_writer.writerow(line)
+ 
+ "Run - excecute selction in python console"
