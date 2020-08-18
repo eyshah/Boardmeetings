@@ -16,7 +16,8 @@ An csv text file stands for Comma separated value where each line in the file co
 * Pycharm IDE / https://www.jetbrains.com/pycharm/download/#section=windows
 
 
-__Code 1 = How to open / read a CSV File__
+
+__Code 1 = HOW TO OPEN / READ A CSV FILE__
 
  __Code sturcture__
 
@@ -45,7 +46,8 @@ By applying this code within python allowed it to open and read your csv file.
 
  
 
-__CODE 2 Write the same CVS file changing the delimiter__
+
+__CODE 2 WRITE HE SAME CSV FILE CHANGING THE DILIMITER__
  
  __Code structure__
  *Code 1 minus line 4-5. Following on with code 2*
@@ -78,6 +80,8 @@ with open("new_meetingme_csv", "w") as new_nfile:
  "Run - excecute selction in python console"
  
  This code 2 I have written in python allows to separate the data within the csv file by a different delimiter.
+ 
+ 
  
  
  **CODE 3 - USING DICTREADER TO EXTRACT INFORMATION**
