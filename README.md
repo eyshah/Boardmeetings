@@ -78,3 +78,24 @@ with open("new_meetingme_csv", "w") as new_nfile:
  "Run - excecute selction in python console"
  
  This code 2 I have written in python allows to separate the data within the csv file by a different delimiter.
+ 
+ 
+ **CODE 3 - USING DICTREADER TO EXTRACT INFORMATION**
+ 
+ 
+ __In practice__
+ 
+ import csv
+
+csv_reader= csv.reader(open("boardmeetingnew.csv","r"), delimiter=",")
+
+with open("boardmeetingnew.csv", "r") as new_nfile:
+    csv_reader = csv.DictReader(new_nfile)
+
+    for line in csv_reader:
+        print(line["email"])
+	
+""Run - excecute in python selction""
+
+
+This dictreader code works a s aython dictionary hwhere it reads the first line and using the comma separted values within your files sepatrehte colums and print out everything that come sout under that coloum. Your outcome can be changed according to what infromation you would want to be extrcated. just remember to use the special keys and first line as the reference to ensure ths code works properly.
