@@ -84,7 +84,7 @@ with open("new_meetingme_csv", "w") as new_nfile:
  
  
  
- **CODE 3 - USING DICTREADER TO EXTRACT INFORMATION**
+ **CODE 3 - USING DICTREADER FUNCTION TO EXTRACT INFORMATION**
  
  
  __In practice__
