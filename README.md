@@ -10,7 +10,6 @@ Using python, a high-tech programming language, allowing users to programme on b
 An csv text file stands for Comma separated value where each line in the file contains data , though within the file at the start each value is separated by a comma later on within python, Within my organisation I will be having individual meetings, hence why I have imputed some emails within my csv file, however to add additional information and parse I will create a python script and commands. 
 
 
-  
   __Requirments / Programs needed to be preinstalled__
 
 * Latest version of python 3 / https://www.python.org/downloads/
@@ -20,7 +19,7 @@ An csv text file stands for Comma separated value where each line in the file co
 
 
 	
-	__Code 1 = HOW TO OPEN / READ A CSV FILE__
+__CODE 1 = HOW TO OPEN / READ A CSV FILE__
 
  __Code sturcture__
 
@@ -43,6 +42,7 @@ with open("C:/Users/Ayesha's laptop/PycharmProjects/try-22/boardmeetingnew.csv",
     for line in csv_rfile:
         print(line)
  
+
 "Run- Excecute selction in python console"
 
 By applying this code within python allowed it to open and read your csv file.
@@ -50,7 +50,7 @@ By applying this code within python allowed it to open and read your csv file.
  
 
 
-__CODE 2 WRITE HE SAME CSV FILE CHANGING THE DILIMITER__
+__CODE 2 WRITE THE SAME CSV FILE CHANGING THE DILIMITER__
  
  __Code structure__
  *Code 1 minus line 4-5. Following on with code 2*
@@ -80,6 +80,7 @@ with open("new_meetingme_csv", "w") as new_nfile:
      for line in csv_reader:
         csv_writer.writerow(line)
  
+ 
  "Run - excecute selction in python console"
  
  This code 2 I have written in python allows to separate the data within the csv file by a different delimiter.
@@ -87,7 +88,7 @@ with open("new_meetingme_csv", "w") as new_nfile:
  
  
  
- **CODE 3 - USING DICTREADER FUNCTION TO EXTRACT INFORMATION**
+ __CODE 3 - USING DICTREADER FUNCTION TO EXTRACT INFORMATION__
  
  
  __In practice__
@@ -102,14 +103,14 @@ with open("boardmeetingnew.csv", "r") as new_nfile:
     for line in csv_reader:
         print(line["email"])
 	
+
 ""Run - excecute in python selction""
 
-
- Within this code the DictReader function works as a python dictionary where it reads the first line and using the comma separted values within your files separtes columns and prints out everything that comes under that coloum. Your outcome can be changed according to what information you would want to be extrcated. just remember to use the special keys and first line as the reference to ensure ths code works properly.
-
+Within this code the DictReader function works as a python dictionary where it reads the first line and using the comma separted values within your files separtes columns and prints out everything that comes under that coloum. Your outcome can be changed according to what information you would want to be extrcated. just remember to use the special keys and first line as the reference to ensure ths code works properly.
 
 
-**Code 4 – Extract information using DictWriter**
+
+__Code 4 – Extract information using DictWriter__
 
 
 __Code structure__
@@ -148,4 +149,5 @@ with open("boardmeetingnew.csv", "r") as new_nfile:
         for line in csv_reader:
             csv_writer.writerow(line)
 	    
- ""Run - Excecute selction in python console""
+
+""Run - Excecute selction in python console""
