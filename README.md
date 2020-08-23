@@ -103,3 +103,46 @@ with open("boardmeetingnew.csv", "r") as new_nfile:
 
 
  Within this code the DictReader function works as a python dictionary where it reads the first line and using the comma separted values within your files separtes columns and prints out everything that comes under that coloum. Your outcome can be changed according to what information you would want to be extrcated. just remember to use the special keys and first line as the reference to ensure ths code works properly.
+
+
+
+**Code 4 – Extract information using DictWriter**
+
+
+__Code structure__
+
+Import csv 
+
+Csv_reader = csv.reader(open(“enter your csv file name” “r”) delimiter “ enter the current delimiter”
+
+With open(“enter your csv file name, “r”) as “enter you knew file variable name”
+	Csv_reader = DictReader( “Enter the variable)
+
+With open (“enter a name for you new csv file”, “w”) as “new file variable”
+	Fieldnames = “ insert the fieldnames of your file- fist line within the file)
+
+	Csv_writer = csv.Dictwriter( Enter new files name, fieldnames=fieldnames, delimter= “enter your new delimiter to separate your data”)
+
+	for line in csv_reader:
+	       csv_writer.writerow(line)
+	       
+	       
+__In practice__
+
+
+import csv
+
+csv_reader = csv.reader(open("boardmeetingnew.csv","r"), delimiter=",")
+
+with open("boardmeetingnew.csv", "r") as new_nfile:
+    csv_reader = csv.DictReader(new_nfile)
+
+    with open("new_meetingme2_csv", "w") as newest_nfile:
+        fieldnames =["First_name", "Last_name", "email"]
+
+        csv_writer = csv.DictWriter(newest_nfile, fieldnames=fieldnames, delimiter="\t")
+
+        for line in csv_reader:
+            csv_writer.writerow(line)
+	    
+ ""Run - Excecute selction in python console""
