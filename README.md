@@ -28,8 +28,8 @@ import csv "installs the csv function"
 with open("File location / File name", "r") as "create a file name"
     csv_reader = csv.reader(create a file name")
 
-    for line in create a file name"
-       print(line)
+    for row in create a file name"
+       print(row)
 
 
   __In practice__ 
@@ -39,8 +39,8 @@ import csv
 with open("C:/Users/Ayesha's laptop/PycharmProjects/try-22/boardmeetingnew.csv", "r") as csv_rfile:
     csv_reader = csv.reader(csv_rfile)
 
-    for line in csv_rfile:
-        print(line)
+    for row in csv_rfile:
+        print(row)
  
 
 "Run- Excecute selction in python console"
@@ -53,19 +53,16 @@ By applying this code within python allowed it to open and read your csv file.
 __CODE 2 WRITE THE SAME CSV FILE CHANGING THE DILIMITER__
  
  __Code structure__
- *Code 1 minus line 4-5. Following on with code 2*
 
 Import csv
 
-with open("File location / File name", "r") as “Create a file name”:
-    csv_reader = csv.reader(file name)
-	       for line in csv_reader
-
+Csv_reader = csv.reader(open(“enter the original file location” , “r”) delimiter= “original delimiter”
+	
 with open(“enter new files name”, “w”) create new files variable name:
-      csv_writer = csv.writerow(enter variable, delimiter=“chose new delimiter”) 
-      
-      for line in (csv_reader)
-      csv_writer.writerow(line)
+          csv_writer = csv.writerow(enter variable, delimiter=“chose new delimiter”) 
+
+	for row in  (csv_reader)
+	 csv_writer.writerow(row)
 
 
 __In practice__
@@ -77,8 +74,8 @@ csv_reader= csv.reader(open("boardmeetingnew.csv","r"), delimiter=",")
 with open("new_meetingme_csv", "w") as new_nfile:
      csv_writer = csv.writer(new_nfile, delimiter="/")
 
-     for line in csv_reader:
-        csv_writer.writerow(line)
+     for row in csv_reader:
+        csv_writer.writerow(row)
  
  
  "Run - excecute selction in python console"
@@ -100,8 +97,8 @@ csv_reader= csv.reader(open("boardmeetingnew.csv","r"), delimiter=",")
 with open("boardmeetingnew.csv", "r") as new_nfile:
     csv_reader = csv.DictReader(new_nfile)
 
-    for line in csv_reader:
-        print(line["email"])
+    for row in csv_reader:
+        print(row["email"])
 	
 
 ""Run - excecute in python selction""
@@ -127,8 +124,8 @@ With open (“enter a name for you new csv file”, “w”) as “new file vari
 
 	Csv_writer = csv.Dictwriter( Enter new files name, fieldnames=fieldnames, delimter= “enter your new delimiter to separate your data”)
 
-	for line in csv_reader:
-	       csv_writer.writerow(line)
+	for row in csv_reader:
+	       csv_writer.writerow(row)
 	       
 	       
 __In practice__
@@ -146,8 +143,8 @@ with open("boardmeetingnew.csv", "r") as new_nfile:
 
         csv_writer = csv.DictWriter(newest_nfile, fieldnames=fieldnames, delimiter="\t")
 
-        for line in csv_reader:
-            csv_writer.writerow(line)
+        for row in csv_reader:
+            csv_writer.writerow(row)
 	    
 
 ""Run - Excecute selction in python console""
