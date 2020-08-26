@@ -32,7 +32,7 @@ with open("File location / File name", "r") as "create a file name"
        print(row)
 
 
-  __In practice__ 
+  __In Python__ 
 
 import csv
 
@@ -65,7 +65,7 @@ with open(“enter new files name”, “w”) create new files variable name:
 	 csv_writer.writerow(row)
 
 
-__In practice__
+__In Python__
 
 import csv
 
@@ -88,7 +88,7 @@ with open("new_meetingme_csv", "w") as new_nfile:
  __CODE 3 - USING DICTREADER FUNCTION TO EXTRACT INFORMATION__
  
  
- __In practice__
+ __In Python__
  
  import csv
 
@@ -128,7 +128,7 @@ With open (“enter a name for you new csv file”, “w”) as “new file vari
 	       csv_writer.writerow(row)
 	       
 	       
-__In practice__
+__In Python__
 
 
 import csv
