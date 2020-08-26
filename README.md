@@ -148,3 +148,52 @@ with open("boardmeetingnew.csv", "r") as new_nfile:
 	    
 
 ""Run - Excecute selction in python console""
+
+""DictWriter funtion works is succesfull if fieldnames parameters is accurate."
+
+
+
+__CODE 5 - If & break statement to exit loop__
+
+ __Code Structure__
+ 
+ 
+ Import csv 
+
+with open(“ Enter the files name”) as “create a variable name”
+reader = csv.reader(“enter the files variable name”)
+
+	“Create a variable code before statement” 
+	EG; email = 0
+
+	for line in reader:
+	print(line)
+
+             if “enter the variable code” > enter a code digit E.g. 5
+                  break
+		
+	    email +=  enter a digit new E.g. 1
+	    
+	    
+	    
+
+__In Python__
+
+
+import csv
+
+with open("boardmeetingnew.csv") as new:
+    reader = csv.reader(new)
+
+    email = 0
+
+    for line in reader:
+        print(line)
+
+        if email > 5:
+            break
+
+        email += 1
+
+
+""Run - excecute selection in python console""
