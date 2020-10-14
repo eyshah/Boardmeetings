@@ -21,22 +21,14 @@ An csv text file stands for Comma separated value where each line in the file co
 	
 # CODE 1 = HOW TO OPEN / READ A CSV FILE
 
-#Imports the csv module
+import csv ##Imports the csv module
 
-import csv
-
-#opens the csv file to "r" read function
-
-with open("C:/Users/Ayesha's laptop/PycharmProjects/try-22/boardmeetingnew.csv","r") as csv_rfile:
-
-    #Variable created to store the file in
+with open("C:/Users/Ayesha's laptop/PycharmProjects/try-22/boardmeetingnew.csv","r") as csv_rfile: #opens the csv file to "r" read function
     
-    to_extract = csv.reader(csv_rfile)
-
-    #final command will print the rows as an output from the "csv_rfile"
+    to_extract = csv.reader(csv_rfile) ##Variable created to store the file in
     
     for row in csv_rfile:
-        print(row)
+        print(row) #final command will print the rows as an output from the "csv_rfile"
  
 "Run- Excecute selction in python console"
 
