@@ -19,7 +19,8 @@ An csv text file stands for Comma separated value where each line in the file co
 
 
 	
-##CODE 1 = HOW TO OPEN / READ A CSV FILE
+# CODE 1 = HOW TO OPEN / READ A CSV FILE
+
 __Import the csv module/ opens the csv file to "r" read function, Variable created to store the file in, final command will print the rows as an output from the "csv_rfile"__
 
 import csv
