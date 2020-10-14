@@ -21,7 +21,7 @@ An csv text file stands for Comma separated value where each line in the file co
 	
 # CODE 1 = HOW TO OPEN / READ A CSV FILE
 
-__Import the csv module/ opens the csv file to "r" read function/ Variable created to store the file in/ final command will print the rows as an output from the "csv_rfile"__
+__Import the csv module/ opens the csv file to "r" read function/ Variable created to store the file in\nfinal command will print the rows as an output from the "csv_rfile"__
 
 import csv
 
@@ -30,8 +30,8 @@ with open("C:/Users/Ayesha's laptop/PycharmProjects/try-22/boardmeetingnew.csv",
     to_extract = csv.reader(csv_rfile)
     
     for row in csv_rfile:
-        p
-	rint(row)
+        
+	print(row)
 	
 "Run- Excecute selction in python console"
 
