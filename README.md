@@ -57,27 +57,7 @@ Within this code the DictReader function works as a python dictionary where it r
 
 # Code 4 – Extract information using DictWriter
 
-# imports the csv module
-import csv
-
-csv_read = csv.reader(open("boardmeetingnew.csv","r"), delimiter=",")
-
-# Currently using the Dictreader funtion for new file.
-with open("boardmeetingnew.csv", "r") as new_nfile:
-    csvreading = csv.DictReader(new_nfile)
-
-    # Opening and writing a new csv file using "w" python function
-    with open("new_meetingme2.csv", "w") as newest_nfile:
-        # pass in fieldnames first line of csv for the order of values in the dictionary.
-        fieldnames = ["First_name", "Last_name", "email"]
-
-        """
-        Dictwriter method to pass in new file being written two 
-        along side with fieldnames and new chosen delimeiter.
-        """
-        csv_writing = csv.DictWriter(newest_nfile, fieldnames=fieldnames, delimiter="\t")
-        for row in csvreading:
-            csv_writing.writerow(row)
+![code4](https://user-images.githubusercontent.com/69476214/96038640-4eb37d80-0e5f-11eb-84bf-a9d95d55b9b8.PNG)
 
 ""Run - Excecute selction in python console""
 
