@@ -1,4 +1,4 @@
- CSV FILE Task 4 project brief.
+ 				# CSV FILE Task 4 project brief..
 
   # PARSE / VISUALIZE IN PYTHON A CSV FILE
 
@@ -28,7 +28,7 @@ An csv text file stands for Comma separated value where each line in the file co
 By applying this code within python allowed it to open and read your csv file.
 
  
- # CODE 2A WRITE THE SAME CSV FILE CHANGING THE DILIMITER
+ # CODE 2A WRITE THE SAME CSV FILE CHANGING THE DILIMITER.
 
 ![code2a](https://user-images.githubusercontent.com/69476214/96037814-38f18880-0e5e-11eb-9a30-04b0d03fca17.PNG)
  
