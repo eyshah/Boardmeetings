@@ -21,9 +21,10 @@ An csv text file stands for Comma separated value where each line in the file co
 	
 # CODE 1 = HOW TO OPEN / READ A CSV FILE
 
-__Imports the csv module
+__Imports the csv module__
+
 import csv
-# opens the csv file to "r" read function
+__opens the csv file to "r" read function__
 with open("C:/Users/Ayesha's laptop/PycharmProjects/try-22/boardmeetingnew.csv","r") as csv_rfile:
     # Variable created to store the file in
     to_extract = csv.reader(csv_rfile)
