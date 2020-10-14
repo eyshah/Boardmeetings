@@ -21,28 +21,19 @@ An csv text file stands for Comma separated value where each line in the file co
 	
 __CODE 1 = HOW TO OPEN / READ A CSV FILE__
 
- __Code sturcture__
+   __In Python__ 
 
-import csv "installs the csv function"
-
-with open("File location / File name", "r") as "create a file name"
-    variable = csv.reader(create a file name")
-
-    for row in "create a file name"
-       print(row)
-
-
-  __In Python__ 
-
+# Imports the csv module
 import csv
-
-with open("C:/Users/Ayesha's laptop/PycharmProjects/try-22/boardmeetingnew.csv", "r") as csv_rfile:
+# opens the csv file to "r" read function
+with open("C:/Users/Ayesha's laptop/PycharmProjects/try-22/boardmeetingnew.csv","r") as csv_rfile:
+    # Variable created to store the file in
     to_extract = csv.reader(csv_rfile)
-
+    # final command will print the rows as an output from the "csv_rfile"
     for row in csv_rfile:
         print(row)
  
-
+ 
 "Run- Excecute selction in python console"
 
 By applying this code within python allowed it to open and read your csv file.
@@ -52,30 +43,23 @@ By applying this code within python allowed it to open and read your csv file.
 
 __CODE 2A WRITE THE SAME CSV FILE CHANGING THE DILIMITER__
  
- __Code structure__
+ ___In Python__
 
-Import csv
-
-csvreadings = csv.reader(open(“enter the original file location” , “r”) delimiter= “original delimiter”
-	
-with open(“enter new files name”, “w”) create new files variable name:
-          csv_writing = csv.writerow(enter variable, delimiter=“chose new delimiter”) 
-
-	for row in (csvreadings)
-	 csv_writing.writerow(row)
-
-
-__In Python__
-
+# imports the required csv module
 import csv
 
-csvreadings= csv.reader(open("boardmeetingnew.csv","r"), delimiter=",")
+# input csv file to r function into a variable / input the delimited used in csv file
+csvreadings = csv.reader(open("boardmeetingnew.csv", "r"), delimiter=",")
 
-with open("new_meetingme_csv", "w") as new_nfile:
-     csv_writing = csv.writer(new_nfile, delimiter="/")
+# writing "w" a new csv file with with a new name
+with open("new_meetingme.csv", "w") as new_nfile:
 
-     for row in csvreadings:
-        csv_writings.writerow(row)
+    # adding the new delimiter to new file with csv.writer function
+    csv_writing = csv.writer(new_nfile, delimiter="/")
+
+    # write out all rows from original file csvreadings into new file with writerow(row)module
+    for row in csvreadings:
+        csv_writing.writerow(row)
  
  
  "Run - excecute selction in python console"
@@ -84,25 +68,19 @@ with open("new_meetingme_csv", "w") as new_nfile:
  
  
  __CODE2b-- HOW TO APPEND YOUR CSV FILE__
+
+__In python__
  
- __Code Structure__
- 
- import csv
- 
- Variable1 = open("required file name", "a") **"a" open files in append mode**
- variable2 = **store a float number**
- variable1.write("Write your text required" \n+str(variable2) **\n** will start the new line 
- variable.close()
- 
- 
- __In python__
- 
- import csv
- 
- appendingcsv = open("new_meetingme.csv", "a")
- time= "4:30"
- appendingcsv.write("STELLA\nHARRIS\nTOM\n**Have another meeting at** +str(time))
- appending.close()
+# import csv moudle
+import csv
+# create a varible to open / store the csv file in as "a" append
+appendingcsv = open("new_meetingme.csv", "a")
+# time variable created to add numbers to string
+time = "4:30pm"
+# appendingcsv.write module to add additionl information to csv + "str" to attach numbers to whole string
+appendingcsv.write("STELLA\nHARRIS\nTOM\n**have another team meeting at**"  + str(time))
+# close the code after finished
+appendingcsv.close()
  
  
  ""Run - excecute in python selction""
@@ -114,13 +92,17 @@ with open("new_meetingme_csv", "w") as new_nfile:
  
  __In Python__
  
- import csv
+# imports the csv module
+import csv
 
-reader= csv.reader(open("boardmeetingnew.csv","r"), delimiter=",")
+# reader variable created to open/read csv file hence the "r" included the delimiter in file
+reader = csv.reader(open("boardmeetingnew.csv","r"), delimiter=",")
 
+# Dictreader funtion treats csv as a object remembering the keys.
 with open("boardmeetingnew.csv", "r") as new_nfile:
     reading = csv.DictReader(new_nfile)
 
+    # for row in original file prints out only the emails"
     for row in reading:
         print(row["email"])
 	
@@ -134,42 +116,30 @@ Within this code the DictReader function works as a python dictionary where it r
 __Code 4 – Extract information using DictWriter__
 
 
-__Code structure__
-
-Import csv 
-
-Csv_read = csv.reader(open(“enter your csv file name” “r”) delimiter “ enter the current delimiter”
-
-With open(“enter your csv file name, “r”) as “enter you knew file variable name”
-	csvreading = csv.DictReader( “Enter the variable)
-
-With open (“enter a name for you new csv file”, “w”) as “new file variable”
-	Fieldnames = “ insert the fieldnames of your file- fist line within the file)
-
-        Csv_writing = csv.Dictwriter( Enter new files name, fieldnames=fieldnames, delimter= “enter your new delimiter to separate your data”)
-
-	for row in csvreading:
-	       csv_writing.writerow(row)
-	       
-	       
 __In Python__
 
 
+# imports the csv module
 import csv
 
 csv_read = csv.reader(open("boardmeetingnew.csv","r"), delimiter=",")
 
+# Currently using the Dictreader funtion for new file.
 with open("boardmeetingnew.csv", "r") as new_nfile:
     csvreading = csv.DictReader(new_nfile)
 
-    with open("new_meetingme2_csv", "w") as newest_nfile:
-        fieldnames =["First_name", "Last_name", "email"]
+    # Opening and writing a new csv file using "w" python function
+    with open("new_meetingme2.csv", "w") as newest_nfile:
+        # pass in fieldnames first line of csv for the order of values in the dictionary.
+        fieldnames = ["First_name", "Last_name", "email"]
 
+        """
+        Dictwriter method to pass in new file being written two 
+        along side with fieldnames and new chosen delimeiter.
+        """
         csv_writing = csv.DictWriter(newest_nfile, fieldnames=fieldnames, delimiter="\t")
-
         for row in csvreading:
             csv_writing.writerow(row)
-	    
 
 ""Run - Excecute selction in python console""
 
@@ -179,45 +149,28 @@ with open("boardmeetingnew.csv", "r") as new_nfile:
 
 __CODE 5 - If & break statement to exit loop__
 
- __Code Structure__
  
- 
- Import csv 
-
-with open(“ Enter the files name”) as “create a variable name”
-	reader_variable = csv.reader(“enter the files variable name”)
-
-	“Create a variable code before statement” 
-	EG; email = 0
-
-	for line in reader_variable:
-	print(line)
-
-             if “enter the variable code” > enter a code digit E.g. 5
-                  break
-		
-	    email +=  enter a digit new E.g. 1
-	    
-	    
-	    
-
 __In Python__
 
-
+# imports the csv module
 import csv
-
-with open("boardmeetingnew.csv") as emails_info:
+# created a reader_variable for the opened up csv file
+with open("boardmeetingnew.csv", "r") as emails_info:
     reader_variable = csv.reader(emails_info)
 
+    # created a variable email giving number "0" as csv file has many rows
     email = 0
 
     for line in reader_variable:
         print(line)
 
+        """
+        if & break statement - if email "varaible" bigger than 5 braek 
+        or self loop and add 1 each time to varaible 
+        until it gets bigger than 5 and then break stop the loop.
+        """
         if email > 5:
             break
-
-        email += 1
 
 
 ""Run - excecute selection in python console""
