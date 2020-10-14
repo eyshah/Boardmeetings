@@ -22,6 +22,7 @@ An csv text file stands for Comma separated value where each line in the file co
 # CODE 1 = HOW TO OPEN / READ A CSV FILE
 
 #Imports the csv module
+
 import csv
 
 #opens the csv file to "r" read function
