@@ -30,22 +30,7 @@ By applying this code within python allowed it to open and read your csv file.
  
  # CODE 2A WRITE THE SAME CSV FILE CHANGING THE DILIMITER
 
-# imports the required csv module
-import csv
-
-# input csv file to r function into a variable / input the delimited used in csv file
-csvreadings = csv.reader(open("boardmeetingnew.csv", "r"), delimiter=",")
-
-# writing "w" a new csv file with with a new name
-with open("new_meetingme.csv", "w") as new_nfile:
-
-    # adding the new delimiter to new file with csv.writer function
-    csv_writing = csv.writer(new_nfile, delimiter="/")
-
-    # write out all rows from original file csvreadings into new file with writerow(row)module
-    for row in csvreadings:
-        csv_writing.writerow(row)
- 
+![code2a](https://user-images.githubusercontent.com/69476214/96037814-38f18880-0e5e-11eb-9a30-04b0d03fca17.PNG)
  
  "Run - excecute selction in python console"
  
