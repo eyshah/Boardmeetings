@@ -37,24 +37,14 @@ By applying this code within python allowed it to open and read your csv file.
  This code 2 I have written in python allows to separate the data within the csv file by a different delimiter.
  
  
- # CODE2b-- HOW TO APPEND YOUR CSV FILE
+ # CODE2b = HOW TO APPEND YOUR CSV FILE
  
-# import csv moudle
-import csv
-# create a varible to open / store the csv file in as "a" append
-appendingcsv = open("new_meetingme.csv", "a")
-# time variable created to add numbers to string
-time = "4:30pm"
-# appendingcsv.write module to add additionl information to csv + "str" to attach numbers to whole string
-appendingcsv.write("STELLA\nHARRIS\nTOM\n**have another team meeting at**"  + str(time))
-# close the code after finished
-appendingcsv.close()
- 
- 
+ ![code2b](https://user-images.githubusercontent.com/69476214/96038313-dbaa0700-0e5e-11eb-8b9a-b0a11fe3603e.PNG)
+
  ""Run - excecute in python selction""
  
  
- 
+
  # CODE 3 - USING DICTREADER FUNCTION TO EXTRACT INFORMATION
  
 # imports the csv module
