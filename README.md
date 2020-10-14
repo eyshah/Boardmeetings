@@ -23,36 +23,12 @@ An csv text file stands for Comma separated value where each line in the file co
 
 ![code1](https://user-images.githubusercontent.com/69476214/96037297-8e796580-0e5d-11eb-8614-246e9e8e89b8.PNG)
 
-
-
-
-
-
-
-
-
-
-
-__Import the csv module/ opens the csv file to "r" read function, Variable created to store the file in, final command will print the rows as an output from the "csv_rfile"__
-
-import csv
-
-with open("C:/Users/Ayesha's laptop/PycharmProjects/try-22/boardmeetingnew.csv","r") as csv_rfile:
-    
-    to_extract = csv.reader(csv_rfile)
-    
-    for row in csv_rfile:
-        
-	print(row)
-	
 "Run- Excecute selction in python console"
 
 By applying this code within python allowed it to open and read your csv file.
 
  
-
-
-# CODE 2A WRITE THE SAME CSV FILE CHANGING THE DILIMITER
+ # CODE 2A WRITE THE SAME CSV FILE CHANGING THE DILIMITER
 
 # imports the required csv module
 import csv
