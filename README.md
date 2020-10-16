@@ -68,3 +68,17 @@ Within this code the DictReader function works as a python dictionary where it r
 ![code5](https://user-images.githubusercontent.com/69476214/96038809-9f2adb00-0e5f-11eb-9038-9733e78ed740.PNG)
 
 ""Run - excecute selection in python console""
+
+
+# Imports the csv module
+import csv
+
+# opens the csv file to "r" read function
+with open("C:/Users/Ayesha's laptop/PycharmProjects/try-22/boardmeetingnew.csv","r") as csv_rfile:
+
+    # Variable created to store the file in
+    to_extract = csv.reader(csv_rfile)
+
+    # final command will print the rows as an output from the "csv_rfile"
+    for row in csv_rfile:
+        print(row)
