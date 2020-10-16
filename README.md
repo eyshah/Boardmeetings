@@ -11,15 +11,35 @@ Using Pycharm an IDE for python, which is a high-tech programming language, allo
   # Python Packages installed
  
 *Name: pip
+
 Version: 20.2.2
+
 Summary: The PyPA recommended tool for installing Python packages.
+
 Home-page: https://pip.pypa.io/
+
+
 Author: The pip developers
+
 Author-email: distutils-sig@python.org
+
 License: MIT
-Location: c:\users\ayesha's laptop\pycharmprojects\pythonproject\venv\lib\site-packages
-Requires:
-Required-by:
+
+
+* Name: setuptools
+
+Version: 49.3.1
+
+Summary: Easily download, build, install, upgrade, and uninstall Python packages
+
+Home-page: https://github.com/pypa/setuptools
+
+Author: Python Packaging Authority
+
+Author-email: distutils-sig@python.org
+
+License: UNKNOWN
+
 
 
 
