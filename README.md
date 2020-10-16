@@ -1,12 +1,6 @@
  # Project brief Task 4 PARSE / VISUALIZE IN PYTHON A CSV FILE
 
-Using python, a high-tech programming language, allowing users to programme on both smaller and larger scales. I have created my own csv file which I will then be modifying and analysing within this language program, with the help of another program known as PyCharm, which is an integrated environment platform used to run codes within python.
-
-  
-  # CSV FILE
-  
-An csv text file stands for Comma separated value where each line in the file contains data , though within the file at the start each value is separated by a comma later on within python, Within my organisation I will be having individual meetings, hence why I have imputed some emails within my csv file, however to add additional information and parse I will create a python script and commands. 
-
+Using Pycharm an IDE for python, which is a high-tech programming language, allowing users to programme on both smaller and larger scales. The project iam working on is task 4 where I will be modifying and manipulating my own CSV file in various iffrent ways by creating diffrent codes. An csv text file stands for Comma separated value where each line in the file contains data. Within my organisation I will be having a small meeting, hence why I have imputed some information of my workers within my csv file, so wwith this file i will be creating codes which each of the code will excecute a diffrent task. So for example a code to to add additional information to the file, known as "Appending" the file, create codes to extract certain data, write the same file changing the delimeter making the dat within the file readble to the ye and the code will demonstate a way user can change the way data is stored in a csv. Overall my project will ensure that the fundamentals of handiling a CSV file using python and pycharm comes through.
 
   # Requirments / Programs needed to be preinstalled
 
@@ -14,7 +8,7 @@ An csv text file stands for Comma separated value where each line in the file co
 
 * Pycharm IDE / https://www.jetbrains.com/pycharm/download/#section=windows
 
-
+# Codes and CSV file can be found in my Github Respository.
 
 	
 # CODE 1 = HOW TO OPEN / READ A CSV FILE
